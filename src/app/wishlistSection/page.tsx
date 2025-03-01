@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useWishlist } from '../wishlist/wishlistContext';
 import Link from 'next/link';
 
@@ -20,10 +20,12 @@ export default function WishlistPage() {
             <p className="w-[48px] h-[24px] font-medium text-[16px] text-[#000000]">
               Home
             </p>
-            <img
+            <Image
               className="w-[20px] h-[20px]"
               src="/shopicon/sidearrow.png"
               alt="sidearrow"
+              width={20}
+              height={20}
             />
             <p className="w-[41px] h-[22px] font-medium text-[14px] text-[#000000]">
               Wishlsit
@@ -56,6 +58,9 @@ export default function WishlistPage() {
                    src={product.image}
                    alt={product.title}
                    className="w-16 h-16 object-cover rounded mr-4"
+                   width={64}
+                   height={64}
+                   title={product.title}
                  />
                  <div>
                    <h2 className="text-xl font-semibold mb-2">{product.title}</h2>

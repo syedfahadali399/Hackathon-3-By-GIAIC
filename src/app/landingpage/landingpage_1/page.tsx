@@ -29,7 +29,7 @@ const getProduct = async () => {
 
 const LandingPage_1 = () => {
 
-    const[fetching, useData] = useState<data[]>([])
+    const[fetching, UseData] = useState<data[]>([])
     // const [error, setError] = useState<string | null>(null);
     const [isLoading, setLoading] = useState(true)
 
@@ -38,7 +38,7 @@ const LandingPage_1 = () => {
             try{
                 setLoading(true)
                 const fetchdata = await getProduct()
-                useData(fetchdata)  
+                UseData(fetchdata)  
             } catch(err) {
                 console.error('Error fetching products:', err);
             } finally {

@@ -32,7 +32,7 @@ const gettingProductdata = async () => {
 
 const LandingPage_4 = () => {
 
-    const[fetching, useData] = useState<data[]>([])
+    const[fetching, UseData] = useState<data[]>([])
     const[loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -40,7 +40,7 @@ const LandingPage_4 = () => {
             try{
                 setLoading(true)
                 const fetchdata = await gettingProductdata()
-                useData(fetchdata)
+                UseData(fetchdata)
             } catch (error) {
                 console.log("Failed To Failed data", error)
             } finally {

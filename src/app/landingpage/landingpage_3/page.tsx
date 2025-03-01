@@ -43,7 +43,7 @@ const getProduct = async () => {
 
 const LandingPage_3 = () => {
 
-    const[fetching, useData] = useState<product[]>([])
+    const[fetching, UseData] = useState<product[]>([])
     const[isloading, setLoading] = useState(true)
     const { addToCart } = useCart();
     const { addToWishlist } = useWishlist();
@@ -53,7 +53,7 @@ const LandingPage_3 = () => {
             try{
                 setLoading(true)
                 const fetchdata = await getProduct()
-                useData(fetchdata)
+                UseData(fetchdata)
             } catch(error) {
                 console.error("Failed to fetch data", error)
             } finally {
