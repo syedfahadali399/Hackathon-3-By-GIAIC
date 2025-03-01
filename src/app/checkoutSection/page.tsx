@@ -4,7 +4,7 @@ import FollowCursor from "../cursor/page";
 
 const fontPoppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
-let CheckOutSection = () => {
+const CheckOutSection = () => {
     return(
         <section className={fontPoppins.className}>
           {/* Landing Page 1 */}

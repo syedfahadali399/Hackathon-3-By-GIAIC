@@ -1,4 +1,4 @@
-let ServicePage = () => {
+const ServicePage = () => {
     return(
         <section className="h-[270px] bg-[#f3f2ee] max-lg:h-[300px] max-st:h-[400px]">
         <div className="h-[270px] flex flex-row gap-[42px] items-center justify-center max-2xl:gap-[24px] max-xl:grid max-xl:grid-cols-2 max-xl:justify-items-center max-lg:h-[300px] max-st:flex max-st:flex-col max-st:h-[400px]">

@@ -8,7 +8,7 @@ import { useCart } from "../addtocart/cartContext";
 
 const fontPoppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
-let CartSection = () => {
+const CartSection = () => {
 
   const { cart, removeFromCart } = useCart();
   // const { items, removeItem } = useCartStore();

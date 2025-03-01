@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import { useState, useEffect } from "react";
 import { client } from "@/sanity/lib/client";
 import { usePathname } from "next/navigation";
-import { product } from "@/sanity/schemaTypes/product";
+// import { product } from "@/sanity/schemaTypes/product";
 import { useCart } from "../addtocart/cartContext";
 import { useWishlist } from "../wishlist/wishlistContext";
 // import WishlistButton from "../wishlistButton/page";

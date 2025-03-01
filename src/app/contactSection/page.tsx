@@ -2,11 +2,10 @@ import { Poppins } from "next/font/google";
 import ServicePage from "../servicepage/page";
 import Button from "../components/button";
 import FollowCursor from "../cursor/page";
-import { FormProvider } from "sanity";
 
 const fontPoppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
-let ContactSection = () => {
+const ContactSection = () => {
     return(
         <section className={fontPoppins.className}>
             {/* Landing Page 1 */}

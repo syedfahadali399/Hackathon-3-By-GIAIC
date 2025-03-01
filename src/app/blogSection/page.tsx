@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const fontPoppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
-let BlogSection = () => {
+const BlogSection = () => {
     return(
         <section className={fontPoppins.className}>
              {/* Landing Page 1 */}
