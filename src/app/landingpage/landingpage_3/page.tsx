@@ -74,10 +74,10 @@ const LandingPage_3 = () => {
 
              {isloading? (
                 <Loading/>
-             ): (fetching.map((render:product) => {
+             ): (fetching.map((render:product, index) => {
                 return(
         
-                 <div className="relative group w-[285px] h-[490px] bg-gray-100 overflow-hidden rounded-lg shadow-md max-lg:w-[260px]">
+                 <div key={index} className="relative group w-[285px] h-[490px] bg-gray-100 overflow-hidden rounded-lg shadow-md max-lg:w-[260px]">
                       <div className="w-[48px] h-[48px] flex items-center justify-center absolute left-56 top-6 border border-[#E97171] rounded-[50%] bg-[#E97171] max-lg:left-52">
                             <div className="w-[26px] h-[24px] text-[#FFFF] text-[16px] font-medium">{render.discountPercentage}%</div>
                        </div>

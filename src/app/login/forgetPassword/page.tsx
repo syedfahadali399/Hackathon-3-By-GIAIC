@@ -13,14 +13,13 @@ const ForgetPassword = () => {
             reject(Error("Error"))
           }, 1000)
         })
+        console.log(back)
       }
     return(
         <section className="bg-gray-50 dark:bg-gray-900">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 w-[750px] max-mt:w-[500px] max-st:w-[420px] max-lm:w-[360px] max-mm:w-[300px]">
       <div className="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8">
-          <h1 className="mb-1 text-xl font-bold leading-tight tracking-tight text-red-600 md:text-2xl dark:text-white">
-              Forgot your password?
-          </h1>
+          <h1 className="mb-1 text-xl font-bold leading-tight tracking-tight text-red-600 md:text-2xl dark:text-white">Forgot your password?</h1>
           <p className="font-medium text-black dark:text-gray-400">Don't fret! Just type in your email and we will send you a code to reset your password!</p>
           <form className="mt-4 space-y-4 lg:mt-5 md:space-y-5" action="#">
               <div>

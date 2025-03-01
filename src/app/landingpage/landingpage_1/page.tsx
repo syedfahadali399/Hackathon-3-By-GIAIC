@@ -59,9 +59,9 @@ const LandingPage_1 = () => {
         <div className="w-full flex flex-row justify-center gap-[64px] h-[650px] max-2xl:h-[625px] max-xl:gap-[42px] max-lt:grid max-lt:grid-cols-2 max-lt:justify-items-center max-lt:h-[1270px] max-st:flex-col max-st:flex max-st:items-center max-st:h-[1615px] max-lm:h-[1600px] max-mm:h-[1475px]">
           {isLoading?(
             <Loading/>
-            ):(fetching.map((render:data) => {
+            ):(fetching.map((render:data, index) => {
                 return(
-                    <div className="w-[381px] h-[600px] flex flex-col text-center gap-[24px] items-center max-2xl:w-[325px] max-2xl:h-[610px] max-xl:w-[285px] max-lg:w-[250px] max-lg:h-[615px] max-st:h-[510px] max-mm:h-[455px]">
+                    <div key={index} className="w-[381px] h-[600px] flex flex-col text-center gap-[24px] items-center max-2xl:w-[325px] max-2xl:h-[610px] max-xl:w-[285px] max-lg:w-[250px] max-lg:h-[615px] max-st:h-[510px] max-mm:h-[455px]">
                        <img className="max-mt:h-[500px] max-st:h-[450px] max-lm:h-[425px] max-mm:h-[400px]" src={render.image} alt={render.id} />
                        <p className="w-[125px] h-[36px] font-bold text-[24px] text-[#333333] max-lg:text-[20px]">{render.price}$</p>
                        <hr className="bg-black"/>

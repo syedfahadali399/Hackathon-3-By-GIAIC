@@ -63,9 +63,9 @@ const LandingPage_2 = () => {
                     <div>
                         {loading? (
                             <Loading/>
-                        ) : (fetching.map((render:data) => {
+                        ) : (fetching.map((render:data, index) => {
                             return(
-                                <img className="mix-blend-multiply max-2xl:w-[435px] max-2xl:h-[435px] max-xl:w-[375px] max-xl:h-[375px] max-lt:w-[325px] max-lt:h-[325px] max-mt:w-[300px] max-mt:h-[300px] max-lt:mr-2" src={render.image} alt={render.title} />
+                                <img key={index} className="mix-blend-multiply max-2xl:w-[435px] max-2xl:h-[435px] max-xl:w-[375px] max-xl:h-[375px] max-lt:w-[325px] max-lt:h-[325px] max-mt:w-[300px] max-mt:h-[300px] max-lt:mr-2" src={render.image} alt={render.title} />
                             )
                         }))}
                     </div>
