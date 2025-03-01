@@ -59,7 +59,7 @@ const importingData = async () => {
 
 const ShopSection = () => {
 
-  const[fetching, useData] = useState<products[]>([])
+  const[fetching, UseData] = useState<products[]>([])
   const[isloading, setLoading] = useState(true)
   const { addToCart } = useCart();
   const { addToWishlist } = useWishlist();
@@ -71,7 +71,7 @@ const ShopSection = () => {
       try{
         setLoading(true)
         const fetchdata = await importingData()
-        useData(fetchdata)
+        UseData(fetchdata)
       } catch(error) {
         console.error("Failed to fetch data", error)
       } finally {
